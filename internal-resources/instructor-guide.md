@@ -1,4 +1,7 @@
-# ![Instructor Guide](../assets/instructor-guide.png)
+<h1>
+  <span class="headline">ITB Installfest Early 2025</span>
+  <span class="subhead">Instructor Guide</span>
+</h1>
 
 **_Nothing here yet._**
 

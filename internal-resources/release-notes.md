@@ -1,5 +1,8 @@
-# ![Release Notes](../assets/release-notes.png)
+<h1>
+  <span class="headline">ITB Installfest Early 2025</span>
+  <span class="subhead">Release Notes</span>
+</h1>
 
-## Version 1.0 - Updates from legacy content
+## Version 1.0 - New
 
-This release modularizes the legacy installfest guide, but the content is otherwise unchanged.
+This is brand new installfest content.

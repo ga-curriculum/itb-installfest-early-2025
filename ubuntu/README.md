@@ -1,11 +1,14 @@
-# ![Installfest - Early 2024 - Ubuntu Installfest](./assets/hero.png)
+<h1>
+  <span class="headline">ITB Installfest Early 2025</span>
+  <span class="subhead">Ubuntu</span>
+</h1>
 
 Please only proceed with this guide if you cannot use Windows or macOS. While developing on Ubuntu is more than possible, many course tools we use, such as Zoom, perform better on Windows or macOS. Proceed at your own risk.
 
 ## What you need to begin *(you must read this, do not skip this, this is important)*
 
 - ***A device running Ubuntu 22.04 LTS (Jammy Jellyfish).***
-- At least 20GB of free hard drive space.
+- At least 40GB of free hard drive space.
 - At least 8GB of RAM. 16GB of RAM or more is preferable and will improve your learning experience (particularly when screen sharing in Zoom).
 - A user account with administrative privilege to your local installation of Ubuntu.
 - A fundamental understanding of Linux system administration and debugging.
@@ -16,7 +19,7 @@ If you run into issues during installfest, please reach out to your installfest 
 
 ## Slack
 
-We will be using Slack to communicate throughout the course. Download the `.deb` app from Slack **[here](https://slack.com/downloads/)** and install it. Please do not use the in-browser version of Slack, as it makes managing notifications unnecessarily difficult and makes it easy to miss important class information - the app is the way to go.
+We will be using Slack to communicate throughout the course. Download the `.deb` app from Slack [here](https://slack.com/downloads/) and install it. Please do not use the in-browser version of Slack, as it makes managing notifications unnecessarily difficult and makes it easy to miss important class information - the app is the way to go.
 
 We also recommend downloading the Slack app for your mobile device to stay in touch on the go - you can find quick QR code links inside the toggles below. You won't need this often, but it can be handy in emergencies.
 
@@ -40,11 +43,11 @@ Scan this QR code with your Android device to get the Slack app from the Google 
 
 ## Zoom
 
-We'll hold class in Zoom. If you haven't already, download the Zoom client from **[here](https://zoom.us/download#client_4meeting)** and install it.
+We'll hold class in Zoom. If you haven't already, download the Zoom client from [here](https://zoom.us/download#client_4meeting) and install it.
 
 ## Visual Studio Code
 
-We will use VS Code as our code editor in class. Download and install the `.deb` package for VS Code **[here](https://code.visualstudio.com/)**.
+We will use VS Code as our code editor in class. Download and install the `.deb` package for VS Code [here](https://code.visualstudio.com/).
 
 ## A note on copying commands
 
@@ -52,13 +55,13 @@ When possible, ***please copy the commands from this page***. You will use most 
 
 ### Copying text in code blocks
 
-To copy text from code blocks, use your mouse to hover over the code block. A **Copy** button will appear in the upper right corner. Click this, and the text held in the code block will be put on your clipboard, ready to be pasted. By default, you'll need to use **`Ctrl` + `Shift` + `V`** to paste into the Ubuntu terminal.
+To copy text from code blocks, use your mouse to hover over the code block. A **Copy** button will appear in the upper right corner. Click this, and the text held in the code block will be put on your clipboard, ready to be pasted. By default, you'll need to use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> to paste into the Ubuntu terminal.
 
 ![A codebock shown in GitHub pages. The Copy button is being pointed at by a red arrow.](./assets/code-copy.png)
 
 ## Launch the Terminal application
 
-To quickly launch applications, press the **`Super`** key (this is the name of the **`Windows`** key on your keyboard in Ubuntu) to launch System Search view and type **`Terminal`**. Select the Terminal application by pressing **`Enter`** when it appears. Get used to doing this often; it's the fastest way to start applications on Ubuntu!
+To quickly launch applications, press the <kbd>Super</kbd> key (this is the name of the <kbd>Windows</kbd> key on your keyboard in Ubuntu) to launch System Search view and type `Terminal`. Select the Terminal application by pressing <kbd>Enter</kbd> when it appears. Get used to doing this often; it's the fastest way to start applications on Ubuntu!
 
 ![Launching the Terminal application using Spotlight. Get used to seeing this often; it's the fastest way to start applications on the Mac!](./assets/terminal-system-search.png)
 
@@ -72,9 +75,9 @@ Your Linux installation will not automatically perform updates, so run this comm
 sudo apt update && sudo apt upgrade
 ```
 
-To run a command, paste (or type) it into your terminal, confirm it matches what you intended, and press the **`Enter`** key.
+To run a command, paste (or type) it into your terminal, confirm it matches what you intended, and press the <kbd>Enter</kbd> key.
 
-You'll be prompted for your user password and to accept the changes to be made. Do so. As you type your password in, you'll notice it doesn't appear in the terminal. This is normal for password entry; keep typing it in and hit **`Enter`** when you're done.
+You'll be prompted for your user password and to accept the changes to be made. Do so. As you type your password in, you'll notice it doesn't appear in the terminal. This is normal for password entry; keep typing it in and hit <kbd>Enter</kbd> when you're done.
 
 ![The output of the command to update Ubuntu packages.](./assets/update-and-upgrade.png)
 
@@ -90,7 +93,7 @@ sudo apt install curl
 
 ## Zsh
 
-Bash is Ubuntu's default shell (command interpreter), but Z shell is more commonly used in modern systems by default, so that's what we will use. Install it with this command, and accept the changes to be made by entering **`Y`** when prompted to continue:
+Bash is Ubuntu's default shell (command interpreter), but Z shell is more commonly used in modern systems by default, so that's what we will use. Install it with this command, and accept the changes to be made by entering <kbd>Y</kbd> when prompted to continue:
 
 ```bash
 sudo apt install zsh
@@ -136,21 +139,7 @@ This should print **`/usr/bin/zsh`**.
 
 At its core, GitHub (commonly abbreviated as GH) is a service for hosting Git repositories (which we'll talk about soon) in the cloud, but it also enables developers to collaborate on projects much more effectively. It might help to think of it as a social media platform for you and more than 100 million developers worldwide.
 
-If you don't have an account there, create one now. Visit **[`https://github.com`](https://github.com)** and sign up. While there are paid account tiers, GitHub offers a very generous free tier that offers more than you need for the course.
-
-## GitHub Enterprise (GHE)
-
-In addition to using GitHub, you'll use General Assembly's private GitHub Enterprise instance (commonly abbreviated as GHE) throughout the course. If you think of GitHub as a social media platform for developers worldwide, you can think of GitHub Enterprise as a social media platform just for developers at General Assembly.
-
-You can sign up for an account here: **[http://git-invite.generalassemb.ly/]( http://git-invite.generalassemb.ly/)**
-
-You may use the same username for both GH & GHE accounts; however, it’s recommended that you distinguish between the two by appending **-ga** to your GH username, for example: **YourGitHubUsername-ga**
-
-### What's the difference between GH and GHE? Why does this matter?
-
-While they are very similar, these are two separate and distinct entities that are fully split and unaware of one another's existence.
-
-You'll make all of your public contributions on GitHub, while your course materials, templates, labs, and more will come from GitHub Enterprise to protect General Assembly intellectual property.
+If you don't have an account there, create one now. Visit [`https://github.com`](https://github.com) and sign up. While there are paid account tiers, GitHub offers a very generous free tier that offers more than you need for the course.
 
 ## Git
 
@@ -160,7 +149,7 @@ Ensure you have access to the most recent stable version of Git with this comman
 sudo add-apt-repository ppa:git-core/ppa
 ```
 
-You may be prompted for your Ubuntu password. If you are, enter it. When prompted to continue, press **`Enter`**. If you encounter an error during this process, check out the **Handling errors 💔** sub-section below.
+You may be prompted for your Ubuntu password. If you are, enter it. When prompted to continue, press <kbd>Enter</kbd>. If you encounter an error during this process, check out the **Handling errors 💔** sub-section below.
 
 Then enter:
 
@@ -174,7 +163,7 @@ and then finally, use this command to install Git on your machine:
 sudo apt-get install git
 ```
 
-Enter **`Y`** when prompted to continue.
+Enter <kbd>Y</kbd> when prompted to continue.
 
 ### Handling errors 💔
 
@@ -190,7 +179,7 @@ Use the below command to add a user name to Git, which will be used to identify 
 git config --global user.name "User Name"
 ```
 
-Next, use the below command to add an email to Git, which will be used to identify your commits. Replace `user@email.com` with the email address associated with your **[`https://github.com`](https://github.com)** account. ***The email you provide MUST match the email address associated with your GitHub account.*** Ensure you leave the quotes surrounding your email. There will not be any output from this command. If you don’t have a **[`https://github.com`](https://github.com)** account yet, create one before you run this.
+Next, use the below command to add an email to Git, which will be used to identify your commits. Replace `user@email.com` with the email address associated with your [`https://github.com`](https://github.com) account. ***The email you provide MUST match the email address associated with your GitHub account.*** Ensure you leave the quotes surrounding your email. There will not be any output from this command. If you don’t have a [`https://github.com`](https://github.com) account yet, create one before you run this.
 
 ```bash
 git config --global user.email "user@email.com"
@@ -258,7 +247,7 @@ Here, you see the new **`.gitignore_global`** file open in VS Code.
 
 ### Here is a [.gitignore_global file for you to use](../global-git-ignore.md)
 
-Open the above page and copy the contents of the code block from the page with the copy button. Note that you must be logged in to your GHE account to access this page!
+Open the above page and copy the contents of the code block from the page using the **Copy** button.
 
 Return to VS Code, then click inside the editor (the main portion of the VS Code window).
 
@@ -270,7 +259,7 @@ Congrats, you just edited your first file in VS Code! This is a great time to tu
 
 ![Auto Save checked in the File menu, indicating that Auto Save is enabled.](./assets/vsc-auto-save-enabled.png)
 
-This should save the file, but let's be sure by manually saving it by using **Save** in the **File** Menu or pressing **`Ctrl + S`**.
+This should save the file, but let's be sure by manually saving it by using **Save** in the **File** Menu or pressing <kbd>Ctrl</kbd> + <kbd>S</kbd>.
 
 You can close VS Code for now.
 
@@ -298,7 +287,7 @@ You may see this prompt part way through the install process:
 
 ![Error message reads: (Head detached at FETCH_HEAD). That can't be good!](./assets/nvm-head-detached.png)
 
-If you do, just hit **`q`** - that will exit this screen and return you to the below install process. If you don't get this error, that's great; continue until you see the completed installation of `nvm`:
+If you do, just hit <kbd>Q</kbd> - that will exit this screen and return you to the below install process. If you don't get this error, that's great; continue until you see the completed installation of `nvm`:
 
 ![The completed installation of nvm.](./assets/nvm-install-complete.png)
 
@@ -326,7 +315,7 @@ A successful install of node v20.11.0. Your version may be slightly different fr
 
 #### command not found: nvm error
 
-Copy this command block and run it in the terminal, which will point to the nvm directory in your **`~/.zshrc`** file:
+Copy this command block and run it in the terminal, which will point to the nvm directory in your <code class="filepath">~/.zshrc</code> file:
 
 ```bash
 cat << EOF >> ~/.zshrc
