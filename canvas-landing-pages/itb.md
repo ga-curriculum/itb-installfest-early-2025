@@ -9,14 +9,14 @@ Welcome to Installfest, your first hands-on experience in setting up a developme
 
 ## Content
 
-| Lesson                                                                      | Skills                                               |
-| --------------------------------------------------------------------------- | ---------------------------------------------------- |
-| [The Installfest Journey](../the-installfest-journey/README.md)             | Getting started with this guide.                     |
-| [macOS](../macos/README.md)                                                 | Configuring a development environment in macOS.      |
-| [Windows 11](../windows-11/README.md)                                       | Configuring a development environment in Windows 11. |
-| [Ubuntu](../ubuntu/README.md)                                               | Configuring a development environment in Ubuntu.     |
-| [VS code](../vs-code/README.md)                                             | Download and setup VS Code.                          |
-| [Github: Personal Access Tokens](../github-personal-access-token/README.md) | Setup a personal access token in GitHub.             |
+| Lesson                                                                                      | Skills                                               |
+| ------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [The Installfest Journey](../the-installfest-journey/README.md)                             | Getting started with this guide.                     |
+| [macOS](../macos/README.md)                                                                 | Configuring a development environment in macOS.      |
+| [Windows 11 and WSL](../windows-11-and-wsl/README.md)                                       | Configuring a development environment in Windows 11. |
+| [Ubuntu](../ubuntu/README.md)                                                               | Configuring a development environment in Ubuntu.     |
+| [VS code Customization](../vs-code-customization/README.md)                                 | Download and setup VS Code.                          |
+| [Create a GitHub Personal Access Token](../create-a-github-personal-access-token/README.md) | Setup a personal access token in GitHub.             |
 
 ## References
 

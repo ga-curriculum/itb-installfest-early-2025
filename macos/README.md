@@ -35,7 +35,7 @@ If you are using a device equipped with an Apple Silicon chip, the first time yo
 
 We highly recommend against using the built-in macOS window management features in macOS Sonoma unless you have extensive experience using them and are already comfortable manipulating windows without a mouse. This is where Rectangle comes in.
 
-Rectangle is an open-source window management tool that offers extensive customization - no more fiddling with window position in macOS! Install Rectangle from [here](https://rectangleapp.com/). Once it is installed by moving it into the <code class="filepath">`Applications`</code> directory, launch it with **Spotlight** (using <kbd>⌘ Command</kbd> + <kbd>Space</kbd>).
+Rectangle is an open-source window management tool that offers extensive customization - no more fiddling with window position in macOS! Install Rectangle from [here](https://rectangleapp.com/). Once it is installed by moving it into the <code class="filepath">Applications</code> directory, launch it with **Spotlight** (using <kbd>⌘ Command</kbd> + <kbd>Space</kbd>).
 
 Because Rectangle is an application downloaded from the internet, you'll be prompted to allow it to open after you've installed it. Grant this permission.
 

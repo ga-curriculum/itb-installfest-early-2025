@@ -16,16 +16,9 @@ macOs = new Template.Microlesson {
   videoUrl = ""
 }
 
-windows_10 = new Template.Microlesson {
-  friendlyName = "Windows 10"
-  dirName = "windows-10"
-  type = "Content"
-  videoUrl = ""
-}
-
-windows_11 = new Template.Microlesson {
-  friendlyName = "Windows 11"
-  dirName = "windows-11"
+windows11AndWsl = new Template.Microlesson {
+  friendlyName = "Windows 11 and WSL"
+  dirName = "windows-11-and-wsl"
   type = "Content"
   videoUrl = ""
 }
@@ -37,16 +30,16 @@ ubuntu = new Template.Microlesson {
   videoUrl = ""
 }
 
-vsCode = new Template.Microlesson {
-  friendlyName = "VS Code"
-  dirName = "vs-code"
+vsCodeCustomization = new Template.Microlesson {
+  friendlyName = "VS Code Customization"
+  dirName = "vs-code-customization"
   type = "Content"
   videoUrl = ""
 }
 
-gitHubPersonalAccessToken = new Template.Microlesson {
-  friendlyName = "GitHub Personal Access Token"
-  dirName = "github-personal-access-token"
+createAGitHubPersonalAccessToken = new Template.Microlesson {
+  friendlyName = "Create a GitHub Personal Access Token"
+  dirName = "create-a-github-personal-access-token"
   type = "Content"
   videoUrl = ""
 }

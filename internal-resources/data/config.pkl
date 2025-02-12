@@ -23,11 +23,10 @@ courses {
       // add microlessons here, in the order they should be delivered
       mls.theInstallfestJourney
       mls.macOs
-      mls.windows_10
-      mls.windows_11
+      mls.windows11AndWsl
       mls.ubuntu
-      mls.vsCode
-      mls.gitHubPersonalAccessToken
+      mls.vsCodeCustomization
+      mls.createAGitHubPersonalAccessToken
     }
   }
   new {
@@ -36,11 +35,10 @@ courses {
       // add microlessons here, in the order they should be delivered
       mls.theInstallfestJourney
       mls.macOs
-      mls.windows_10
-      mls.windows_11
+      mls.windows11AndWsl
       mls.ubuntu
-      mls.vsCode
-      mls.gitHubPersonalAccessToken
+      mls.vsCodeCustomization
+      mls.createAGitHubPersonalAccessToken
     }
   }
 }
