@@ -1,6 +1,6 @@
 <h1>
   <span class="headline">ITB Installfest Early 2025</span>
-  <span class="subhead">GitHub Personal Access Token</span>
+  <span class="subhead">Create a GitHub Personal Access Token</span>
 </h1>
 
 GitHub deprecated the use of password authentication via the command line in 2021, as detailed in [this GitHub blog post](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). This means we must authenticate using GitHub's preferred authentication method: personal access tokens.

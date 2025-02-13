@@ -54,7 +54,7 @@ You'll also set up a GitHub account.
 
 - curl
 
-## 2. Setup VS Code
+## 2. Customize VS Code
 
 Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft that is compatible with Windows, macOS, and Linux.
 

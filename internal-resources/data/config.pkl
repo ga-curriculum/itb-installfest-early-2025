@@ -19,6 +19,8 @@ repo {
 courses {
   new {
     name = "itb"
+    isHeaderModuleNavShown = false
+    isFooterLessonNavShown = false
     microlessons {
       // add microlessons here, in the order they should be delivered
       mls.theInstallfestJourney
@@ -31,6 +33,8 @@ courses {
   }
   new {
     name = "fallback"
+    isHeaderModuleNavShown = false
+    isFooterLessonNavShown = false
     microlessons {
       // add microlessons here, in the order they should be delivered
       mls.theInstallfestJourney

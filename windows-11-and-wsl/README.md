@@ -563,7 +563,7 @@ Make Python 3.13 the default version used with:
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.13 10
 ```
 
-You can test the installation by running `python3 --version`.
+You can test the installation by running `python3 --version`. It should print something starting with `Python 3.13`.
 
 ### Install pip
 

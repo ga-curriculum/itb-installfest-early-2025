@@ -3,11 +3,11 @@
   <span class="subhead">Ubuntu</span>
 </h1>
 
-Please only proceed with this guide if you cannot use Windows or macOS. While developing on Ubuntu is more than possible, many course tools we use, such as Zoom, perform better on Windows or macOS. Proceed at your own risk.
+Please only proceed with this guide if you cannot use Windows or macOS. While taking the course on Linux is more than possible, many course tools we use, such as Zoom, perform better on Windows or macOS. Proceed at your own risk.
 
 ## What you need to begin *(you must read this, do not skip this, this is important)*
 
-- ***A device running Ubuntu 22.04 LTS (Jammy Jellyfish).***
+- ***A device running Ubuntu 24.04 LTS (Noble Numbat).***
 - At least 40GB of free hard drive space.
 - At least 8GB of RAM. 16GB of RAM or more is preferable and will improve your learning experience (particularly when screen sharing in Zoom).
 - A user account with administrative privilege to your local installation of Ubuntu.
@@ -15,7 +15,7 @@ Please only proceed with this guide if you cannot use Windows or macOS. While de
 
 ## Troubleshooting
 
-If you run into issues during installfest, please reach out to your installfest point of contact.
+If you run into issues during Installfest, please reach out to your Installfest point of contact.
 
 ## Slack
 
@@ -57,13 +57,13 @@ When possible, ***please copy the commands from this page***. You will use most 
 
 To copy text from code blocks, use your mouse to hover over the code block. A **Copy** button will appear in the upper right corner. Click this, and the text held in the code block will be put on your clipboard, ready to be pasted. By default, you'll need to use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> to paste into the Ubuntu terminal.
 
-![A codebock shown in GitHub pages. The Copy button is being pointed at by a red arrow.](./assets/code-copy.png)
+![A code bock shown in GitHub pages. The Copy button is being pointed at by a red arrow.](./assets/code-copy.png)
 
 ## Launch the Terminal application
 
 To quickly launch applications, press the <kbd>Super</kbd> key (this is the name of the <kbd>Windows</kbd> key on your keyboard in Ubuntu) to launch System Search view and type `Terminal`. Select the Terminal application by pressing <kbd>Enter</kbd> when it appears. Get used to doing this often; it's the fastest way to start applications on Ubuntu!
 
-![Launching the Terminal application using Spotlight. Get used to seeing this often; it's the fastest way to start applications on the Mac!](./assets/terminal-system-search.png)
+![Launching the Terminal application using System Search. Get used to seeing this often; it's the fastest way to start applications on the Ubuntu!](./assets/terminal-system-search.png)
 
 The Terminal application should start!
 
@@ -154,13 +154,13 @@ You may be prompted for your Ubuntu password. If you are, enter it. When prompte
 Then enter:
 
 ```bash
-sudo apt-get update
+sudo apt update
 ```
 
 and then finally, use this command to install Git on your machine:
 
 ```bash
-sudo apt-get install git
+sudo apt install git
 ```
 
 Enter <kbd>Y</kbd> when prompted to continue.
@@ -179,7 +179,9 @@ Use the below command to add a user name to Git, which will be used to identify 
 git config --global user.name "User Name"
 ```
 
-Next, use the below command to add an email to Git, which will be used to identify your commits. Replace `user@email.com` with the email address associated with your [`https://github.com`](https://github.com) account. ***The email you provide MUST match the email address associated with your GitHub account.*** Ensure you leave the quotes surrounding your email. There will not be any output from this command. If you don’t have a [`https://github.com`](https://github.com) account yet, create one before you run this.
+Next, use the below command to add an email to Git, which will be used to identify your commits. Replace `user@email.com` with the email address associated with your [`https://github.com`](https://github.com) account. ***The email you provide MUST match the email address associated with your GitHub account.*** Ensure you leave the quotes surrounding your email.
+
+There will not be any output from this command.
 
 ```bash
 git config --global user.email "user@email.com"
@@ -197,7 +199,9 @@ Set the default Git editor to VS Code with the below command. There will not be 
 git config --global core.editor "code --wait"
 ```
 
-By default, Git will ask for a new commit message when commits are brought into a Git repo. The following command will force the default commit message for all those commits instead of prompting you to add a commit message. While this isn’t a Git command, we’re still tackling it as part of this section since it changes Git's behavior. There will not be any output from this command.
+By default, Git will ask for a new commit message when commits are brought into a Git repo. The following command will force the default commit message for all those commits instead of prompting you to add a commit message.
+
+While this isn’t a Git command, we’re still tackling it as part of this section since it changes Git's behavior. There will not be any output from this command.
 
 ```bash
 echo "export GIT_MERGE_AUTOEDIT=no" >> ~/.zshrc
@@ -209,15 +213,21 @@ Finally, turn off rebasing as the default behavior when pulling from a repo with
 git config --global pull.rebase false
 ```
 
+Configure Git to track case changes in file names. There will not be any output from this command.
+
+```bash
+git config --global core.ignorecase false
+```
+
 ### Configuring a `.gitignore_global` file
 
 ***Note: This step is vital to getting a job after the course. If you do not complete these steps exactly, it will look extremely bad to a future employer when they look over your GitHub repos.***
 
 Proper code, utilities, and the use of Git ignore files prevent us from uploading private secrets to the internet.
 
-A global Git ignore file (**`.gitignore_global`**) will prevent us from uploading private secrets to the internet across all of your projects so that you don't have to worry about making the appropriate entries in every project's Git ignore file.
+A global Git ignore file (<code class="filepath">.gitignore_global</code>) will prevent us from uploading private secrets to the internet across all of your projects so that you don't have to worry about making the appropriate entries in every project's Git ignore file.
 
-Use this command to create a **`.gitignore_global`** file in the user directory:
+Use this command to create a <code class="filepath">.gitignore_global</code> file in the user directory:
 
 ```bash
 touch ~/.gitignore_global
@@ -231,19 +241,17 @@ Next, configure Git to use this file:
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-Open the new **`.gitignore_global`** file in VS Code:
+Open the new <code class="filepath">.gitignore_global</code> file in VS Code:
 
 ```bash
 code ~/.gitignore_global
 ```
 
-![Creating and opening `~/.gitignore_global` in VS Code running the `code` command.](./assets/vsc-first-launch.png)
-
-This may be your first time launching VS Code to work with an actual file. If so, congrats! You'll  arrive at a page that should look a lot like this:
+This may be your first time launching VS Code to work with an actual file. If so, congrats! You'll arrive at a page that should look a lot like this:
 
 ![The new .gitignore_global file open in VS Code.](./assets/vsc-gig-launch.png)
 
-Here, you see the new **`.gitignore_global`** file open in VS Code.
+Here, you see the new <code class="filepath">.gitignore_global</code> file open in VS Code.
 
 ### Here is a [.gitignore_global file for you to use](../global-git-ignore.md)
 
@@ -275,84 +283,51 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 Note that your prompt has now changed to simply be `~`. This is the desired outcome!
 
-## Node.js
+## Python
 
-Use this command to install `nvm`, which we will use to install Node.js. `nvm` stands for [Node Version Manager](https://github.com/nvm-sh/nvm) and can be used to swap between different versions of Node.js quickly. We won't swap between different versions in the course, but it's still a handy tool for managing our Node.js install and can help you manage your Node.js installation post-course. Get `nvm` with this command:
+Python is an extremely popular programming language with a simple syntax. It is a natural choice for developers to have in their toolbox. Python must be installed on your machine to execute programs written with it.
 
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-```
-
-You may see this prompt part way through the install process:
-
-![Error message reads: (Head detached at FETCH_HEAD). That can't be good!](./assets/nvm-head-detached.png)
-
-If you do, just hit <kbd>Q</kbd> - that will exit this screen and return you to the below install process. If you don't get this error, that's great; continue until you see the completed installation of `nvm`:
-
-![The completed installation of nvm.](./assets/nvm-install-complete.png)
-
-**Restart the Terminal application now.**
-
-After starting up the Terminal again, run this command to check the version of `nvm`:
+To install Python, run these commands in order in your terminal application, agreeing to any prompts that appear:
 
 ```bash
-nvm --version 
+sudo apt install software-properties-common
 ```
-
-If you do not get a version number, check out the **Handling errors 💔** subsection below; otherwise, continue.
-
-Use nvm to install node version 20 with this command:
 
 ```bash
-nvm install 20
+sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 
-![A successful install of node v20.11.0](./assets/node-install-complete.png)
-
-A successful install of node v20.11.0. Your version may be slightly different from this, but as long as it starts with 20 everything is ok!
-
-### Handling errors 💔
-
-#### command not found: nvm error
-
-Copy this command block and run it in the terminal, which will point to the nvm directory in your <code class="filepath">~/.zshrc</code> file:
+If it doesn't look like anything has happened for a long time after running the above command, press <kbd>Ctrl</kbd> + <kbd>C</kbd> on your keyboard, and re-run the command.
 
 ```bash
-cat << EOF >> ~/.zshrc
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \\. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-EOF
+sudo apt update
 ```
-
-Restart your terminal. You should now be able to run the `nvm --version` command and get a version number in response. If you do not, alert your installfest point of contact.
-
-### NPM config
-
-Run this command to disable `npm` update notifications since this process is managed by `nvm`:
-
-```jsx
-npm config set update-notifier false
-```
-
-There will be no output after running this command.
-
-## nodemon
-
-With Node.js installed, install `nodemon` globally with this command:
 
 ```bash
-npm i -g nodemon
+sudo apt install python3.13
 ```
 
-If nodemon has successfully installed, this should be the output:
+Make Python 3.13 the default version used with:
 
-![nodemon successfully installed!](./assets/nodemon-install-complete.png)
+```bash
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.13 10
+```
+
+You can test the installation by running `python3 --version`. It should print something starting with `Python 3.13`.
+
+### Install pip
+
+pip is the package installer for Python. You'll need it to use Python packages found on the [Python Package Index (PyPI)](https://pypi.org/).
+
+Install pip with this command:
+
+```bash
+sudo apt install python3-pip
+```
 
 ## `~/code` directory
 
-You'll need somewhere on your computer to put all of your work in the course - that's what the `~/code` directory will be for you! All course content assumes you will have this directory, so let's create it now with this command in your terminal:
+You'll need somewhere on your computer to put all of your work in the course - that's what the <code class="filepath">~/code</code> directory will be for you! All course content assumes you will have this directory, so let's create it now with this command in your terminal:
 
 ```bash
 mkdir ~/code

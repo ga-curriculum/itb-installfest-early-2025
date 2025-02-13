@@ -1,6 +1,6 @@
 <h1>
   <span class="headline">ITB Installfest Early 2025</span>
-  <span class="subhead">VS Code</span>
+  <span class="subhead">VS Code Customization</span>
 </h1>
 
 If you've arrived here, you've likely just completed your Installfest and need to set up VS Code. Congrats! But what is VS Code? Glad you asked!
