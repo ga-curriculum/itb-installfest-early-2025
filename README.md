@@ -5,6 +5,8 @@
 
 ## About
 
+# THIS REPO IS DEPRECATED, BUT STILL IN USE BY IN-FLIGHT COHORTS. IT CAN BE DELETED AFTER FEB 1, 2025. You are likely looking for [this repo](https://git.generalassemb.ly/modular-curriculum-all-courses/it-installfest-early-2025) instead.
+
 Welcome to Installfest, your first hands-on experience in setting up a development environment as an aspiring IT Professional! It's normal to encounter unfamiliar terms and even errors, but don't worry — this guide is designed to walk you through each step, ensuring you don't miss anything crucial. And remember, our instructional team is always here to assist you once class begins.
 
 ***Make sure you only follow one path! Do not open the Installfest documents for any OS other than the one you want to set up.***
